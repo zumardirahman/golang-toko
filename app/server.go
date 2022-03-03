@@ -37,6 +37,14 @@ func (server *Server) Run(addr string) {
 	log.Fatal(http.ListenAndServe(addr, server.Router))
 }
 
+func getEnv(key, fallback string) string {
+	if value, ok := os.LookupEnv(key); ok {
+		return value
+	}
+
+	return fallback
+}
+
 func Run() {
 	var server = Server{}
 	var appConfig = AppConfig{}
@@ -47,9 +55,9 @@ func Run() {
 		log.Fatal("Erorr on loading .env file")
 	}
 
-	appConfig.AppName = os.Getenv("APP_NAME")
-	appConfig.AppEnv = os.Getenv("APP_ENV")
-	appConfig.AppPort = os.Getenv("APP_PORT")
+	appConfig.AppName = getEnv("APP_NAME", "GoToko")
+	appConfig.AppEnv = getEnv("APP_ENV", "development")
+	appConfig.AppPort = getEnv("APP_PORT", "9001")
 
 	server.Initialize(appConfig)
 	server.Run(":" + appConfig.AppPort)
