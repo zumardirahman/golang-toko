@@ -2,6 +2,8 @@ module github.com/zumardirahman/golang-toko
 
 go 1.17
 
+require github.com/shopspring/decimal v1.3.1
+
 require (
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/go-sql-driver/mysql v1.6.0 // indirect
