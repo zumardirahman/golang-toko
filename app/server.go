@@ -8,6 +8,7 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv"
+	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
 
@@ -26,6 +27,14 @@ type AppConfig struct {
 //2. membuat metod baru
 func (server *Server) Initialize(appConfig AppConfig) {
 	fmt.Println("Welcome to " + appConfig.AppName) //menampilkajn pesan
+
+	var err error
+	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=Asia/Jakarta", "localhost", "root", "", "gotokodb", "5432")
+	server.DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
+
+	if err != nil {
+		panic("Failed on connecting to the database server")
+	}
 
 	server.Router = mux.NewRouter()
 	server.initializeRoutes() //untuk initialize di routes
