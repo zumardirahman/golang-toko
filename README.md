@@ -58,6 +58,8 @@ For Render view : HTML
 
 #### Membaca Konfigurasi Aplikasi di File .env
 
+#### Koneksi ke Database Server PostgreSQL
+
 
 
 
