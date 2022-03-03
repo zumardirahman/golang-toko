@@ -80,6 +80,7 @@ For Render view : HTML
 
         go get -u github.com/gosimple/slug
 
+#### Membuat CLI Command untuk Database Migration dan Seeding
 
 
 
