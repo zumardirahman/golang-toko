@@ -21,7 +21,7 @@ type Product struct {
 	Stock         int
 	Weight        decimal.Decimal `gorm:"type:decimal(10,2)"`
 
-	ShortDescription string `gorm:"size:255"`
+	ShortDescription string `gorm:"size:text"`
 	Description      string `gorm:"type:text"`
 	Status           int    `gorm:"default:0"`
 	CreatedAt        time.Time
