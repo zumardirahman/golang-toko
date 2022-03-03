@@ -64,6 +64,13 @@ For Render view : HTML
 
 #### Koneksi ke Database Server PostgreSQL
 
+#### Koneksi ke Database Server MySQL (ALternative using DB MySQL)
+  - Install Driver MySQL
+
+      go get gorm.io/driver/mysql
+
+
+
 
 
 

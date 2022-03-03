@@ -4,6 +4,7 @@ go 1.17
 
 require (
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
+	github.com/go-sql-driver/mysql v1.6.0 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/jackc/chunkreader/v2 v2.0.1 // indirect
 	github.com/jackc/pgconn v1.11.0 // indirect
@@ -20,6 +21,7 @@ require (
 	golang.org/x/crypto v0.0.0-20220214200702-86341886e292 // indirect
 	golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1 // indirect
 	golang.org/x/text v0.3.7 // indirect
+	gorm.io/driver/mysql v1.3.2 // indirect
 	gorm.io/driver/postgres v1.3.1 // indirect
 	gorm.io/gorm v1.23.2 // indirect
 )
