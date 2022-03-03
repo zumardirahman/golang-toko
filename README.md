@@ -71,6 +71,8 @@ For Render view : HTML
 
 #### Database Migration dengan GORM
 
+#### Membuat Sample Data dengan Seeder dan Faker
+
 
 
 
