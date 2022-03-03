@@ -33,10 +33,12 @@ Basic E-commerce Web App built with GO
 ## Step Productions
 #### Install Gorilla Mux
 For Routing
+
     go get github.com/gorilla/mux
 
 #### Install Gorm
 For ORM
+
     go get -u gorm.io/gorm
 
 #### Install Driver Postgres
@@ -47,10 +49,12 @@ For PostgreSQL DB Driver
 
 #### Install Go .env
 For Read File `.ENV`
+
     go get github.com/joho/godotenv
 
 #### Install Render
 For Render view : HTML 
+
     go get github.com/unrolled/render
 
 #### Setup Struktur Direktori, GO Modules, dan Route
