@@ -1,6 +1,8 @@
 # golang-toko
 Toko Online dengan Golang | Gorm, Mux, PostgreSQL, Bootstrap
 
+Creted by Zumardi Rahman
+
 ### Featured
 - Homepage
 - Register, Login, Profile User
