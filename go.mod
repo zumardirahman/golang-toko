@@ -5,9 +5,13 @@ go 1.17
 require github.com/shopspring/decimal v1.3.1
 
 require (
+	github.com/bxcodec/faker/v3 v3.7.0 // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/go-sql-driver/mysql v1.6.0 // indirect
+	github.com/google/uuid v1.3.0
 	github.com/gorilla/mux v1.8.0 // indirect
+	github.com/gosimple/slug v1.12.0 // indirect
+	github.com/gosimple/unidecode v1.0.1 // indirect
 	github.com/jackc/chunkreader/v2 v2.0.1 // indirect
 	github.com/jackc/pgconn v1.11.0 // indirect
 	github.com/jackc/pgio v1.0.0 // indirect

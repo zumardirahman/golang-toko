@@ -8,6 +8,7 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv"
+	"github.com/zumardirahman/golang-toko/database/seeders"
 	"gorm.io/driver/mysql"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -40,6 +41,7 @@ func (server *Server) Initialize(appConfig AppConfig, dbConfig DBConfig) {
 
 	server.initializeDB(dbConfig)
 	server.initializeRoutes() //untuk initialize di routes
+	seeders.DBSeed(server.DB) //panggil DBSeed
 }
 
 //3. unutk run web server

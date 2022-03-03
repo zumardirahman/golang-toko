@@ -72,6 +72,13 @@ For Render view : HTML
 #### Database Migration dengan GORM
 
 #### Membuat Sample Data dengan Seeder dan Faker
+  - Install Library Faker Data
+
+        go get -u github.com/bxcodec/faker/v3
+
+  - Install Library Slug
+
+        go get -u github.com/gosimple/slug
 
 
 
