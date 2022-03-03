@@ -54,7 +54,11 @@ For Render view : HTML
     go get github.com/unrolled/render
 
 #### Setup Struktur Direktori, GO Modules, dan Route
-- MVC
+- Create MVC Konsep
+
+#### Membaca Konfigurasi Aplikasi di File .env
+
+
 
 
 
