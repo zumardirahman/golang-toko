@@ -22,6 +22,6 @@ func (server *Server) Products(w http.ResponseWriter, r *http.Request) {
 
 	//module ini akan merender yang ada didalam module templates
 	_ = render.HTML(w, http.StatusOK, "products", map[string]interface{}{
-		"products": products,
+		"products": products, //get data dari database
 	})
 }
