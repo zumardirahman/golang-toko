@@ -85,7 +85,10 @@ For Render view : HTML
 
         go get github.com/urfave/cli
         
+#### Memasang Template HTML Bootstrap
+  - Install Render
 
+        go get github.com/unrolled/render
 
 
 ## References
