@@ -1,7 +1,7 @@
 # golang-toko
 Toko Online dengan Golang | Gorm, Mux, PostgreSQL, Bootstrap
 
-Created by Zumardi Rahman
+Re-Created by Zumardi Rahman
 
 Basic E-commerce Web App built with GO
 ## Features
