@@ -1,0 +1,11 @@
+<html>
+<head>
+<title>Golang Toko</title>
+<link rel="stylesheet" href="/public/css/style.css">
+</head>
+</html>
+<body>
+<!-- Header -->
+{{ yield }}
+<!-- Footer -->
+</body>
