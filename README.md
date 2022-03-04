@@ -4,6 +4,52 @@ Toko Online dengan Golang | Gorm, Mux, PostgreSQL, Bootstrap
 Re-Created by Zumardi Rahman
 
 Basic E-commerce Web App built with GO
+
+## You want to try?
+### Get Started
+Warning! : `Jangan lupa sediakan kopi diatas meja kerjamu`
+
+#### Get Me
+
+        git clone https://github.com/zumardirahman/golang-toko.git
+
+#### Create & Cofig DB Postgres or MySQL
+- Create your name's database : `gotokodb`
+- Setup .ENV with your DB Postgres configuration
+
+        ######################start# Using Postgres DB
+        DB_DRIVER=postgres
+        DB_USER=user
+        DB_PASSWORD=pass
+        DB_PORT=5432 
+        ######################end# Using Postgres DB
+
+
+- Or setup .ENV with your DB MySQL configuration (alternative)
+
+        ######################start# Using MySQL DB
+        DB_DRIVER=mysql
+        DB_USER=user
+        DB_PASSWORD=pass
+        DB_PORT=3306
+        ######################end# Using MySQL DB
+
+#### Auto Migrate and Seeder Data
+- Automigrate Table Database
+
+        go run main.go db:migrate
+
+- Seeder Data
+
+        go run main.go db:seed
+
+#### Running App
+
+        go run main.go
+
+
+Good Luckkkkk . . .
+
 ## Features
 - Home Page
 - Register, Login, Profile User
