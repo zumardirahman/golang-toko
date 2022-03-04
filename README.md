@@ -43,12 +43,15 @@ Warning! : `Jangan lupa sediakan kopi diatas meja kerjamu`
 
         go run main.go db:seed
 
+
+
 #### Running App
 
         go run main.go
 
+Run `go run main.go` for a dev server. Navigate to `http://localhost:9002/`
 
-Good Luckkkkk . . .
+Good Luckkkkk epribadehhhhhh. . .
 
 ## Features
 - Home Page
