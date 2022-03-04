@@ -91,96 +91,27 @@
                         </div>
                     </div>
                     <div class="row">
+                    
+                        {{ range $i, $product := .products }} <!-- get data dari rnder controller -->
+
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="single-product">
                                 <div class="product-img">
-                                    <a href="product-detail.html">
-                                        <img src="./assets/img/products/p1.jpg" class="img-fluid" />
+                                    <a href="/products/{{$product.Slug}}">
+                                        <img src="https://placehold.jp/300x400.png" class="img-fluid" />
                                     </a>
                                 </div>
                                 <div class="product-content">
-                                    <h3><a href="product-detail.html">Cool &amp; Awesome Item</a></h3>
+                                    <h3><a href="/products/{{$product.Slug}}">{{$product.Name}}</a></h3>
                                     <div class="product-price">
-                                        <span>$57.00</span>
+                                        <span>{{$product.Price}}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <a href="product-detail.html">
-                                        <img src="./assets/img/products/p2.jpg" class="img-fluid" />
-                                    </a>
-                                </div>
-                                <div class="product-content">
-                                    <h3><a href="product-detail.html">Cool &amp; Awesome Item</a></h3>
-                                    <div class="product-price">
-                                        <span>$57.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <a href="product-detail.html">
-                                        <img src="./assets/img/products/p3.jpg" class="img-fluid" />
-                                    </a>
-                                </div>
-                                <div class="product-content">
-                                    <h3><a href="product-detail.html">Cool &amp; Awesome Item</a></h3>
-                                    <div class="product-price">
-                                        <span>$57.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <a href="product-detail.html">
-                                        <img src="./assets/img/products/p4.jpg" class="img-fluid" />
-                                    </a>
-                                </div>
-                                <div class="product-content">
-                                    <h3><a href="product-detail.html">Cool &amp; Awesome Item</a></h3>
-                                    <div class="product-price">
-                                        <span>$57.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <a href="product-detail.html">
-                                        <img src="./assets/img/products/p1.jpg" class="img-fluid" />
-                                    </a>
-                                </div>
-                                <div class="product-content">
-                                    <h3><a href="product-detail.html">Cool &amp; Awesome Item</a></h3>
-                                    <div class="product-price">
-                                        <span>$57.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <a href="product-detail.html">
-                                        <img src="./assets/img/products/p2.jpg" class="img-fluid" />
-                                    </a>
-                                </div>
-                                <div class="product-content">
-                                    <h3><a href="product-detail.html">Cool &amp; Awesome Item</a></h3>
-                                    <div class="product-price">
-                                        <span>$57.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                        {{ end }}
+                        
                     </div>
                     <div class="row">
                         <div class="col-12">
