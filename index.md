@@ -6,4 +6,4 @@ Title : `Aplikasi Toko` with Golang
 
 ### Preview
 
-![Preview Golang Toko](https://github.com/zumardirahman/golang-toko/blob/gh-pages/golang-toko-app.png "Preview Golang Toko")
+![Preview Golang Toko](https://raw.githubusercontent.com/zumardirahman/golang-toko/gh-pages/golang-toko-app.png "Preview Golang Toko")
