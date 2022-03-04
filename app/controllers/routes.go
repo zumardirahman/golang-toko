@@ -8,7 +8,8 @@ import (
 
 func (server *Server) initializeRoutes() {
 	server.Router = mux.NewRouter()
-	server.Router.HandleFunc("/", Home).Methods("GET") //routing tes pertama
+	server.Router.HandleFunc("/", server.Home).Methods("GET") //routing tes pertama
+	server.Router.HandleFunc("/products", server.Products).Methods("GET")
 
 	//setup public directory
 	staticFileDirectory := http.Dir("./assets/")

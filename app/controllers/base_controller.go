@@ -40,8 +40,8 @@ type DBConfig struct {
 func (server *Server) Initialize(appConfig AppConfig, dbConfig DBConfig) {
 	fmt.Println("Welcome to " + appConfig.AppName) //menampilkajn pesan
 
-	// server.initializeDB(dbConfig)
-	server.initializeRoutes() //untuk initialize di routes
+	server.initializeDB(dbConfig) //menghubungkan database
+	server.initializeRoutes()     //untuk initialize di routes
 	// seeders.DBSeed(server.DB) //panggil DBSeed
 }
 
