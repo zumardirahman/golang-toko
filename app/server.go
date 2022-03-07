@@ -2,10 +2,10 @@ package app
 
 import (
 	"flag"
-	"log"
+	// "log"
 	"os"
 
-	"github.com/joho/godotenv"
+	// "github.com/joho/godotenv"
 	"github.com/zumardirahman/golang-toko/app/controllers"
 )
 
@@ -22,11 +22,10 @@ func Run() {
 	var appConfig = controllers.AppConfig{}
 	var dbConfig = controllers.DBConfig{}
 
-	err := godotenv.Load()
-
-	if err != nil {
-		log.Fatal("Erorr on loading .env file")
-	}
+	// err := godotenv.Load()
+	// if err != nil {
+	// 	log.Fatal("Erorr on loading .env file")
+	// }
 
 	appConfig.AppName = getEnv("APP_NAME", "GoToko")
 	appConfig.AppEnv = getEnv("APP_ENV", "development")

@@ -1,5 +1,6 @@
 module github.com/zumardirahman/golang-toko
 
+// +heroku goVersion go1.17
 go 1.17
 
 require github.com/shopspring/decimal v1.3.1
