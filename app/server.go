@@ -1,7 +1,7 @@
 package app
 
 import (
-	"flag"
+
 	// "log"
 	"os"
 
@@ -18,7 +18,7 @@ func getEnv(key, fallback string) string {
 }
 
 func Run() {
-	var server = controllers.Server{}
+	//var server = controllers.Server{}
 	var appConfig = controllers.AppConfig{}
 	var dbConfig = controllers.DBConfig{}
 
@@ -38,13 +38,13 @@ func Run() {
 	dbConfig.DBPort = getEnv("DB_PORT", "5432")
 	dbConfig.DBDriver = getEnv("DB_DRIVER", "postgres")
 
-	flag.Parse()
-	arg := flag.Arg(0)
-	if arg != "" {
-		server.InitCommands(appConfig, dbConfig)
-	} else {
-		server.Initialize(appConfig, dbConfig)
-		server.Run(":" + appConfig.AppPort)
-	}
+	// flag.Parse()
+	// arg := flag.Arg(0)
+	// if arg != "" {
+	// 	server.InitCommands(appConfig, dbConfig)
+	// } else {
+	// 	server.Initialize(appConfig, dbConfig)
+	// 	server.Run(":" + appConfig.AppPort)
+	// }
 
 }
